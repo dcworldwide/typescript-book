@@ -14,7 +14,7 @@ Recommend `== null` to check for both `undefined` or `null`. You generally don't
 
 ```ts
 function foo(arg: string | null | undefined) {
-  if (arg != null) {
+  if (arg) {
     // arg must be a string as `!=` rules out both null and undefined. 
   }
 }
